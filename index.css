@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    background: white;
+    position: relative;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0  ;
+}
+nav ul li{
+    width: 100px;
+    padding: 11px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul button{
+    width: 60px;
+    height: 35px;
+    position:absolute;
+    background: #acabab;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin-top: 2px;
+    margin-right: 25px;
+
+    border-radius: 100px;
+    outline:none;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+nav ul button::after{
+    content:"";
+    width: 30px;
+    height: 33px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: unset;
+    background: white;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+nav ul button span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px ;
+    
+}
+.activo{
+    background: orange;
+}
+nav ul button.active{
+    background: orange;
+
+}
+nav ul button.active::after{
+    left: unset;
+    right: 0;
+}
+/* modo dark */
+body.dark{
+    background: #111111;
+}
+body.dark .containerAnimals li,body.dark p,body.dark nav li a,body.dark h5{
+    color: white;
+}
+body.dark nav{
+    background: #1b1a20ad;
+}
+body.dark .fab, .far {
+    color: white;
+}
+/* estilos de los iconos */
+.fab, .far {
+    font-weight: 400;
+    font-size: 21px;
+}
+/* estilos de las imagenes*/
+section{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+section .contenedor{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+section .contenedor div{
+    margin-right: 25px;   
+    border-radius: 7px;
+    width: 50%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
+}
+section .contenedor div img{
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+section .contenedor p{
+    width: 50%;
+    height:200px;
+}
+
+/* footer */
+footer{
+    
+    width: 80%;
+    display: flex;
+    
+    margin: 100px auto;
+    flex-direction: row;
+    
+
+}
+footer div{
+    flex-grow: 1;
+
+}
+footer div:last-child{
+    text-align: right;
+}
